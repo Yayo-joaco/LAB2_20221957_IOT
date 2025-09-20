@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FF8A80"
+    tools:context=".MainActivity">
+
+    <!-- Título principal -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¡Bienvenido a TeleCat 😺!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#2C3E50"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="La app diseñada para generar memes de gatos y divertirte :)"
+        android:textSize="14sp"
+        android:textColor="#34495E"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Contenedor principal de los campos -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFF3E0"
+        android:padding="24dp"
+        android:layout_marginBottom="24dp"
+        android:elevation="4dp">
+
+        <!-- Campo Cantidad -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cantidad:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#2C3E50"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etCantidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe aquí"
+            android:inputType="number"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Campo Texto -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Texto:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#2C3E50"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerTexto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Campo Escribir texto -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escribir texto:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#2C3E50"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etEscribirTexto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe aquí"
+            android:enabled="false"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+    <!-- Botones -->
+    <Button
+        android:id="@+id/btnComprobarConexion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚠️ Comprobar Conexión"
+        android:textColor="@android:color/white"
+        android:background="#E74C3C"
+        android:padding="16dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnComenzar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="▶ Comenzar"
+        android:textColor="@android:color/white"
+        android:background="#95A5A6"
+        android:padding="16dp"
+        android:enabled="false"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

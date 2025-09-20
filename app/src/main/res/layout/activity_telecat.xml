@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FF8A80"
+    tools:context=".TeleCatActivity">
+
+    <!-- Header con título -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FF8A80"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="¿Listo? Diviertete!"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <!-- Información de tiempo y cantidad -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <!-- Tiempo restante -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#D2B48C"
+            android:padding="12dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiempo restante"
+                android:textSize="12sp"
+                android:textColor="#2C3E50"
+                android:layout_marginEnd="8dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:padding="8dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@android:drawable/ic_dialog_info"
+                    android:layout_marginEnd="4dp" />
+
+                <TextView
+                    android:id="@+id/tvTiempoRestante"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:12"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#2C3E50" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Cantidad -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvCantidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cantidad = 3"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#2C3E50" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Título TeleCat -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Telecat!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#2C3E50"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Separador -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#CCCCCC"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Contenedor de imagen -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/ivGato"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:scaleType="centerCrop"
+            android:background="#E0E0E0"
+            android:src="@android:drawable/ic_menu_gallery" />
+
+    </LinearLayout>
+
+    <!-- Botón Siguiente -->
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Siguiente"
+        android:textColor="@android:color/white"
+        android:background="#E74C3C"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:enabled="false" />
+
+</LinearLayout>

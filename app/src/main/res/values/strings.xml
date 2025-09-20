@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Lab2_20221957</string>
+    
+    <!-- Opciones para el Spinner de Texto -->
+    <string-array name="opciones_texto">
+        <item>Elegir</item>
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+    
+    <!-- Mensajes de Toast -->
+    <string name="conexion_exitosa">Conexión a internet exitosa</string>
+    <string name="sin_conexion">Sin conexión a internet</string>
+    <string name="verificando_conexion">Verificando conexión...</string>
+</resources>

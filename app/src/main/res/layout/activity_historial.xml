@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F9FA"
+    tools:context=".HistorialActivity">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF8A80"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Historial"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <!-- Contenido del historial -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Lista de interacciones -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/layoutHistorial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Las interacciones se agregarán dinámicamente aquí -->
+                
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!-- Botón Volver a Jugar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnVolverAJugar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="🔄 Volver a Jugar"
+            android:textColor="@android:color/white"
+            android:background="#E74C3C"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:elevation="4dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
